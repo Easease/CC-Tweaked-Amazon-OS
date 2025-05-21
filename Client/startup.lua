@@ -33,13 +33,13 @@ if remoteVersion ~= version then
 
 
     print("Downloading new files...")
-    shell.run("wget https://raw.githubusercontent.com/Easease/CC-Tweaked-Amazon-OS/refs/heads/main/Client/ClientNetworkHandler.lua ClientNetworkHandler.lua")
-    shell.run("wget https://raw.githubusercontent.com/Easease/CC-Tweaked-Amazon-OS/refs/heads/main/Client/UI.lua UI.lua")
-    shell.run("wget https://raw.githubusercontent.com/Easease/CC-Tweaked-Amazon-OS/refs/heads/main/Client/MiniMark.lua MiniMark.lua")
-    shell.run("wget https://raw.githubusercontent.com/Easease/CC-Tweaked-Amazon-OS/refs/heads/main/Client/browser.lua browser.lua")
-    shell.run("wget https://raw.githubusercontent.com/Easease/CC-Tweaked-Amazon-OS/refs/heads/main/Client/network_config.lua network_config.lua")
-    shell.run("wget https://raw.githubusercontent.com/Easease/CC-Tweaked-Amazon-OS/refs/heads/main/Client/Default.txt Default.txt")
-    shell.run("wget https://raw.githubusercontent.com/Easease/CC-Tweaked-Amazon-OS/refs/heads/main/Client/update.lua update.lua")
+    shell.run("wget https://raw.githubusercontent.com/Easease/CC-Tweaked-Amazon-OS/refs/heads/Dev/Client/ClientNetworkHandler.lua ClientNetworkHandler.lua")
+    shell.run("wget https://raw.githubusercontent.com/Easease/CC-Tweaked-Amazon-OS/refs/heads/Dev/Client/UI.lua UI.lua")
+    shell.run("wget https://raw.githubusercontent.com/Easease/CC-Tweaked-Amazon-OS/refs/heads/Dev/Client/MiniMark.lua MiniMark.lua")
+    shell.run("wget https://raw.githubusercontent.com/Easease/CC-Tweaked-Amazon-OS/refs/heads/Dev/Client/browser.lua browser.lua")
+    shell.run("wget https://raw.githubusercontent.com/Easease/CC-Tweaked-Amazon-OS/refs/heads/Dev/Client/network_config.lua network_config.lua")
+    shell.run("wget https://raw.githubusercontent.com/Easease/CC-Tweaked-Amazon-OS/refs/heads/Dev/Client/Default.txt Default.txt")
+    shell.run("wget https://raw.githubusercontent.com/Easease/CC-Tweaked-Amazon-OS/refs/heads/Dev/Client/update.lua update.lua")
 
     local newVersion = fs.open("localVersion.txt", "w")
     newVersion.write(remoteVersion)
