@@ -4,7 +4,9 @@ local net = require("ClientNetworkHandler")
 local protocol = "EENet"
 local cacheDir = "/browser_cache"
 
-shell.run("wget run https://raw.githubusercontent.com/GrebCo/CC-Tweaked-Amazon-OS/refs/heads/main/Client/startup.lua startup.lua")
+shell.run("delete startup.lua")
+shell.run("wget https://raw.githubusercontent.com/GrebCo/CC-Tweaked-Amazon-OS/refs/heads/main/Client/startup.lua startup.lua")
+os.reboot()
 
 fs.makeDir(cacheDir)
 local screenWidth, screenHeight = term.getSize()
